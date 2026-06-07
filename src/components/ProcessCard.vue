@@ -159,7 +159,7 @@ function indentPrefix(depth: number): string {
   flex-shrink: 0;
   transition: border-color 0.15s, opacity 0.15s;
 }
-.card:not(.dim):hover { border-color: #444c56; }
+.card:not(.dim):hover { border-color: var(--border-hover); }
 .card.dim { opacity: 0.45; }
 
 .card-header {
@@ -217,7 +217,7 @@ function indentPrefix(depth: number): string {
   border-radius: 4px;
   line-height: 1;
 }
-.expand-btn:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+.expand-btn:hover { color: var(--text); background: var(--hover-soft); }
 
 .remove-btn {
   background: none;
@@ -230,7 +230,7 @@ function indentPrefix(depth: number): string {
   line-height: 1;
   flex-shrink: 0;
 }
-.remove-btn:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+.remove-btn:hover { color: var(--text); background: var(--hover-soft); }
 
 .metrics {
   display: flex;

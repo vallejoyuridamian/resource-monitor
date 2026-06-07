@@ -137,10 +137,10 @@ onUnmounted(() => { document.removeEventListener('mousedown', onClickOutside); i
   top: calc(100% + 4px);
   left: 0;
   width: 280px;
-  background: #161b22;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--shadow-lg);
   z-index: 100;
   overflow: hidden;
 }
@@ -148,7 +148,7 @@ onUnmounted(() => { document.removeEventListener('mousedown', onClickOutside); i
 .picker-search {
   width: 100%;
   box-sizing: border-box;
-  background: #161b22;
+  background: var(--card);
   border: none;
   border-bottom: 1px solid var(--border);
   border-radius: 0;
@@ -187,7 +187,7 @@ onUnmounted(() => { document.removeEventListener('mousedown', onClickOutside); i
 }
 
 .picker-item:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--hover-soft);
 }
 
 .picker-item-name {
@@ -207,7 +207,7 @@ onUnmounted(() => { document.removeEventListener('mousedown', onClickOutside); i
 }
 
 .picker-item-count {
-  background: rgba(255, 255, 255, 0.1);
+  background: color-mix(in srgb, var(--bb-color-on-surface) 10%, transparent);
   border-radius: 4px;
   padding: 1px 5px;
   font-size: 11px;

@@ -88,7 +88,7 @@ tr.sub th { font-size: 10px; }
 
 td {
   padding: 6px 14px;
-  border-bottom: 1px solid rgba(48,54,61,0.5);
+  border-bottom: 1px solid var(--table-divider);
   white-space: nowrap;
 }
 

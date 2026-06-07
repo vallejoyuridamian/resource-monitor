@@ -188,19 +188,6 @@ onUnmounted(() => {
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-:root {
-  --bg:     #0d1117;
-  --card:   #161b22;
-  --border: #30363d;
-  --text:   #e6edf3;
-  --muted:  #8b949e;
-  --green:  #3fb950;
-  --blue:   #58a6ff;
-  --amber:  #d29922;
-  --red:    #f85149;
-  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
-}
-
 html, body, #app { height: 100%; }
 
 .app {
@@ -217,7 +204,7 @@ html, body, #app { height: 100%; }
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background: #010409;
+  background: var(--bg-elevated);
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
   gap: 16px;
@@ -290,11 +277,11 @@ h1 {
 .btn-ghost:disabled { opacity: 0.3; cursor: default; }
 
 .btn-accent {
-  background: rgba(63,185,80,0.12);
+  background: var(--accent-soft);
   color: var(--green);
-  border-color: rgba(63,185,80,0.3);
+  border-color: var(--accent-border);
 }
-.btn-accent:hover { background: rgba(63,185,80,0.22); }
+.btn-accent:hover { background: var(--accent-soft-hover); }
 
 .sep { width: 1px; height: 22px; background: var(--border); }
 

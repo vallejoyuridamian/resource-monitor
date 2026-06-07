@@ -2,6 +2,7 @@
   "name": "resource-monitor",
   "version": "0.1.0",
   "scripts": {
+    "change-theme": "node scripts/change-theme.mjs",
     "dev": "tauri dev",
     "build": "tauri build",
     "build:frontend": "vite build",
